@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class DoctorTest
 {
-	Doctor doctor = new Doctor("Phil", "1122", "Brain", 90_000);
+	Doctor doctor = new Doctor("Phil", "1122", 90_000, "Brain");
 	
 	@Test
 	public void careForPatientShouldIncreasePatientHealth()

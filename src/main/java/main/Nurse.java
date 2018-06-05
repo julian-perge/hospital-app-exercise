@@ -9,7 +9,7 @@ public class Nurse extends Employee implements CareForPatient
 
 	private int numOfPatients = 0;
 	
-	public Nurse(String name, String idNumber, int numOfPatients, int salary)
+	public Nurse(String name, String idNumber, int salary, int numOfPatients)
 	{
 		super(name, idNumber, salary);
 		this.numOfPatients = numOfPatients;
@@ -19,4 +19,13 @@ public class Nurse extends Employee implements CareForPatient
 	{
 		patient.heal(5);
 	}
+
+	@Override
+	public String toString()
+	{
+		return "Nurse [getNumOfPatients()=" + getNumOfPatients() + ", getName()=" + getName() + ", getidNumber()="
+				+ getidNumber() + "]";
+	}
+	
+	
 }

@@ -33,4 +33,9 @@ public class Patient
 	{
 		healthLevel += amountToHeal;
 	}
+	
+	public void drawBlood(int amountToDraw)
+	{
+		bloodLevel -= 5;
+	}
 }
